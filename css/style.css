@@ -9,27 +9,81 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* div {
+  width: 100%;
+  height: 5%;
+} */
+
 header {
   width: 100%;
-  height: 116px;
+  height: 45%;
   color: #2b2b2b;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 4em;
   color: #f6f0f0;
+  margin: 3% 3%;
+}
+
+h3 {
+  font-size: 2em;
+  color: #474348;
+  margin: 0% 3%;
+  display: block;
+  width: 22%;
+  float: left;
+}
+
+p {
+  color: #f6f0f0;
+}
+
+.rightside {
+  float: right;
+  text-align: right;
+  display: inline-block;
 }
 
 .labelbar {
   width: 100%;
-  height: 39px;
+  height: 80px;
   background-color: #f29f00;
+  margin: 0 0 0.1% 0;
 }
 
 .bus {
   background-color: #2e2e2e;
   color: #f6f0f0;
   width: 100%;
-  height: 15%;
+  height: 20%;
   margin: 0 0 0.1% 0;
+}
+
+.bus-number-box {
+  background-color: #828282;
+  height: 100%;
+  width: 20%;
+}
+
+/* iOS status bar image */
+img.image1 {
+  width: 100%;
+  height: 10%;
+  padding: 1%;
+}
+
+/* back arrow icon */
+img.image2 {
+  width: 30px;
+  height: 48px;
+  margin: 0 2%;
+}
+
+/* bus vector */
+img.image3 {
+  width: 65px;
+  height: 60px;
+  margin: 1% 3%;
+  float: left;
 }
