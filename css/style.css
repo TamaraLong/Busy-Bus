@@ -17,6 +17,7 @@ body {
   max-height: 667px;
   max-width: 375px;
   margin-left: 300px;
+  overflow: scroll;
 }
 
 header {
@@ -45,6 +46,7 @@ p {
 
 section {
   height: 85%;
+  overflow: scroll;
 }
 
 /* Within the header */
@@ -132,6 +134,7 @@ img.image3 {  /* bus vector */
   padding-bottom: 10px;
   padding-right: 16px;
   text-align: right;
+  order: 2;
 }
 
 .every {
@@ -152,47 +155,40 @@ img.image3 {  /* bus vector */
 }
 
 /* Styling for rerouted bus */
-.reroute {
-
-}
-
 .na {
-  justify-content: center;
+  font-size: 28px;
+  padding-top: 30px;
 }
 
 /* Stlying for out of service buses */
 .ofs {
-  color: #8c8c8c;
+  color: #ff4747;
   font-size: 16px;
   font-weight: bold;
 }
 
-.oos-bus-number-box {
-  background-color: #828282;
-  height: 99%;
-  width: 78px;
-}
-
-.oos-bus-number {
-  padding: 30px 0 20px 16px;
-  font-size: 28px;
-  font-weight: bold;
-  align-items: center;
-  color: #474348;
-}
-
 .resumes {
   font-size: 12px;
-  margin-top: 2px;
+  margin-top: 10px;
   color: #8c8c8c;
 }
 
 .resumetime {
   font-size: 28px;
   margin: 2px 0;
-  color: #8c8c8c;
 }
 
-.out-of-service {
-  color: #8c8c8c;
+.image1 {
+  width: 15px;
+  height: 15px;
+  margin-top: 42px;
+  margin-right: 5px;
+}
+
+.alert {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  align-items: flex-end;
 }
