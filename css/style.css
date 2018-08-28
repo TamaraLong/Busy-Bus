@@ -19,11 +19,6 @@ body {
   margin-left: 300px;
 }
 
-/* div {
-  width: 100%;
-  height: 5%;
-} */
-
 header {
   width: 100%;
   height: 116px;
@@ -33,25 +28,37 @@ header {
 h1 {
   font-size: 28px;
   color: #f6f0f0;
-  margin: 0 0 9px 16px;
+  margin: 15px 0 14px 16px;
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 11px;
   color: #474348;
-  width: 22%;
   float: left;
   text-transform: uppercase;
 }
 
 p {
   color: #f6f0f0;
+  font-weight: lighter;
 }
 
 section {
   height: 85%;
 }
 
+/* Within the header */
+.statusbar {
+  height: 20px;
+}
+
+img.image2 {  /* back arrow icon */
+  width: 12px;
+  height: 20px;
+  margin: 17px 0 0 8px;
+}
+
+/* Orange label bar */
 .labelbar {
   display: flex;
   width: 100%;
@@ -59,65 +66,133 @@ section {
   background-color: #f29f00;
 }
 
+img.image3 {  /* bus vector */
+  width: 23px;
+  height: 23px;
+  margin: 9px 50px 9px 16px;
+}
+
 .frequency-label {
   margin-left: auto;
   padding: 10px 8px 0 0;
 }
 
+/* Full Bus element */
 .bus {
   background-color: #2e2e2e;
   color: #f6f0f0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 69px;
+  height: 80px;
   border-bottom: 0.5px solid #474348;
 }
 
-.bus-number {
-  padding: 30px 0 20px 16px;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+/* Div making up the grey number box */
 .bus-number-box {
   background-color: #828282;
   height: 99%;
   width: 78px;
 }
 
-.frequency {
-  margin-left: auto;
-  word-wrap: break-word;
+.bus-number {
+  padding: 30px 0 20px 16px;
+  font-size: 28px;
+  font-weight: bold;
+  align-items: center;
+}
+
+/* Divs containing bus direction and destination */
+.info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  justify-content: center;
 }
 
 .direction {
   order: 0;
   max-height: 14px;
+  margin-bottom: 10px;
 }
 
-br.destination {
+.destination {
   font-size: 16px;
   font-weight: bold;
   color: #f29f00;
 }
 
-/* iOS status bar image */
-img.image1 {
-  width: 100%;
-  height: 5%;
+/* Divs containing frequency and bus times */
+.time {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  text-align: right;
 }
 
-/* back arrow icon */
-img.image2 {
-  width: 12px;
-  height: 20px;
-  margin: 17px 0 0 8px;
+.every {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #8c8c8c;
 }
 
-/* bus vector */
-img.image3 {
-  width: 23px;
-  height: 23px;
-  margin: 9px 50px 9px 16px;
+.twenty {
+  font-size: 28px;
+  margin: 2px 0;
+}
+
+.minutes {
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: #8c8c8c;
+}
+
+/* Styling for rerouted bus */
+.reroute {
+
+}
+
+.na {
+  justify-content: center;
+}
+
+/* Stlying for out of service buses */
+.ofs {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.oos-bus-number-box {
+  background-color: #828282;
+  height: 99%;
+  width: 78px;
+}
+
+.oos-bus-number {
+  padding: 30px 0 20px 16px;
+  font-size: 28px;
+  font-weight: bold;
+  align-items: center;
+  color: #474348;
+}
+
+.resumes {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #8c8c8c;
+}
+
+.resumetime {
+  font-size: 28px;
+  margin: 2px 0;
+  color: #8c8c8c;
+}
+
+.out-of-service {
+  color: #8c8c8c;
 }
