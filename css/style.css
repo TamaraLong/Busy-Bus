@@ -39,14 +39,14 @@ p {
   font-weight: lighter;
 }
 
-section {
+ul {
   height: 85%;
   max-height: 85%;
   overflow: scroll;
 }
 
 /* Within the header */
-.statusbar {
+.image { /* Status bar icon */
   height: 20px;
 }
 
@@ -76,7 +76,7 @@ img.image3 {  /* bus vector */
 
 .frequency-label {
   margin-left: auto;
-  padding: 18px 16px 0 0;
+  padding: 5px 16px 0 0;
 }
 
 /* Full Bus element */
@@ -135,21 +135,26 @@ img.image3 {  /* bus vector */
   text-align: right;
 }
 
+.am-pm {
+  font-size: 24px;
+  margin-top: 2px;
+}
+
 .every {
   color: #8c8c8c;
   font-size: 12px;
   margin-top: 2px;
 }
 
-.twenty {
-  font-size: 28px;
-  margin: 2px 0;
-}
-
-.minutes {
+/* .next-bus {
   color: #8c8c8c;
   font-size: 12px;
-  margin-bottom: 2px;
+  margin-top: 2px;
+} */
+
+.next-bus-time {
+  font-size: 28px;
+  margin: 7px 0;
 }
 
 /* Styling for rerouted bus */
